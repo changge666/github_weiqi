@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>在线围棋对战平台</title>
+    <script src="../../skin/methos/xhcBoot/xhcBoot.js"></script>
+    <script src="../../htmljs/Play/play.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../skin/Play/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../skin/Play/css/style.css" />
+    <script type="text/javascript" src="../../skin/Play/js/jquery.js"></script>
+    <script type="text/javascript" src="../../skin/Play/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../skin/Play/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="../../skin/Play/js/custom.js"></script>
+    <style type="text/css">
+        .B0 {
+            background-image: url('../../skin/weiqi/B0.gif');
+        }
+
+        .B1 {
+            background-image: url('../../skin/weiqi/B1.gif');
+        }
+
+        .B2 {
+            background-image: url('../../skin/weiqi/B2.gif');
+        }
+
+        .B3 {
+            background-image: url('../../skin/weiqi/B3.gif');
+        }
+
+        .B4 {
+            background-image: url('../../skin/weiqi/B4.gif');
+        }
+
+        .B5 {
+            background-image: url('../../skin/weiqi/B5.gif');
+        }
+
+        .B6 {
+            background-image: url('../../skin/weiqi/B6.gif');
+        }
+
+        .B7 {
+            background-image: url('../../skin/weiqi/B7.gif');
+        }
+
+        .B8 {
+            background-image: url('../../skin/weiqi/B8.gif');
+        }
+
+        .BX {
+            background-image: url('../../skin/weiqi/BX.gif');
+        }
+
+        .D0 {
+            background-image: url('../../skin/weiqi/D0.gif');
+        }
+
+        .D1 {
+            background-image: url('../../skin/weiqi/D1.gif');
+        }
+
+        .C0 {
+            background-image: url('../../skin/weiqi/C0.gif');
+        }
+
+        .C1 {
+            background-image: url('../../skin/weiqi/C1.gif');
+        }
+    </style>
+</head>
+<body>
+    <!--菜单开始-->
+    <div class="menubar noneboxshadow">
+        <div class="w1200">
+            <div class="navbar-toggle-zdy">
+                <span class="icon-bar-zdy"></span>
+                <span class="icon-bar-zdy"></span>
+                <span class="icon-bar-zdy"></span>
+            </div>
+            <div class="M_box">
+                <div class="menuLeft col-md-8 col-sm-8 col-xs-12">
+                    <span href="javascript:;" class="menu menu_1"><img class="logo" src="../../skin/Play/images/menubar/menu_user1.jpg" alt="头像" />&nbsp;&nbsp;<span id="user"></span><a style="color:blue;" href="javascript:;" class="menu menu_1" id="back"> 注销</a></span>
+                </div>
+                <div class="menuRight col-md-4 col-sm-4 col-xs-12">
+                    <!--<a href="javascript:;" class="menu menu_1"><i class="icon"></i>对弈列表</a>
+                    <a href="javascript:;" class="menu menu_2"><i class="menu_icon"></i></a>
+                    <a href="javascript:;" class="menu menu_3"><i class="menu_icon"></i></a>
+                    <a href="javascript:;" class="menu menu_4"><i class="menu_icon"></i></a>
+                    <a href="javascript:;" class="menu menu_5"><i class="menu_icon"></i></a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--菜单结束"-->
+    <div class="w1200 chess_bg">
+        <div class="chess_A">
+            <button class="layui-btn" style="margin-left:170px;" id="start">开始游戏</button>
+            <button class="layui-btn layui-btn-disabled layui-hide" id="touxiang">认输</button>
+            <!--<a href="javascript:;" class="btnReturn"></a>-->
+        </div>
+        <div class="chess_B">
+            <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="divimg img-responsive">
+                    <!--<img src="../../skin/Play/images/chess/chess_awq1.png" class="img-responsive" alt="..." />-->
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <div class="divbox">
+                    <div class="item" id="user_x_1">
+                        <div class="p-img col-md-5 col-sm-5 col-xs-5">
+                            <a href="javascript:;"><img src="../../skin/Play/images/menubar/menu_user1.jpg"></a>
+                        </div>
+                        <div class="p-con col-md-7 col-sm-7 col-xs-7">
+                            <div class="p-name"><span id="user1"></span><span id="user1x"></span></div>
+                            <div class="p-name" id="weiqi1"></div>
+                        </div>
+                    </div>
+                    <!--<div class="item2">
+                        <div class="p-img col-md-5 col-sm-5 col-xs-5"><img src="../../skin/Play/images/chess/chess_ablack_1.png"></div>
+                        <div class="p-con col-md-7 col-sm-7 col-xs-7">
+                            <div class="p-desc"><span class="hours">00</span><span>:</span><span class="minute">00</span><span>:</span><span class="second">00</span></div>
+                        </div>
+                    </div>-->
+                    <div class="item pt30 layui-hide" id="user_x_2">
+                        <div class="p-img col-md-5 col-sm-5 col-xs-5">
+                            <a href="javascript:;"><img src="../../skin/Play/images/menubar/menu_user1.jpg"></a>
+                        </div>
+                        <div class="p-con col-md-7 col-sm-7 col-xs-7">
+                            <div class="p-name"><span id="user2"></span><span id="user2x"></span></div>
+                            <div class="p-name" id="weiqi2"></div>
+                        </div>
+                    </div>
+                    <!--<div class="item2 layui-hide">
+                        <div class="p-img col-md-5 col-sm-5 col-xs-5"><img src="../../skin/Play/images/chess/chess_awhite_1.png"></div>
+                        <div class="p-con col-md-7 col-sm-7 col-xs-7">
+                            <div class="p-desc"><span class="hours">00</span><span>:</span><span class="minute">00</span><span>:</span><span class="second">00</span></div>
+                        </div>
+                    </div>-->
+                    <!--<div class="item3">-->
+                        <!--<div class="p-img col-md-4 col-sm-4 col-xs-6"><a href="javascript:;" class="btn btn_01"></a></div>-->
+                        <!--<div class="p-img col-md-4 col-sm-4 col-xs-6"><a href="javascript:;" class="btn btn_02"></a></div>-->
+                        <!--<div class="p-img col-md-4 col-sm-4 col-xs-6"><a href="javascript:;" class="btn btn_03"></a></div>-->
+                        <!--<div class="p-img col-md-4 col-sm-4 col-xs-6"><a href="javascript:;" class="btn btn_04"></a></div>-->
+                        <!--<div class="p-img col-md-4 col-sm-4 col-xs-6"><a href="javascript:;" class="btn btn_05"></a></div>
+                        <div class="p-img col-md-4 col-sm-4 col-xs-6"><a href="javascript:;" class="btn btn_06"></a></div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "debugger": "true",
+  "defaultDatabase": {
+    "dialect": "mysql", //数据库方言
+    "server": "49.232.168.44", //服务器地址
+    "username": "weiqi", //用户名
+    "password": "EpiPKJRr7FanBsLD", //密码,数组1为明文密码，数组2为解密字符
+    "database": "weiqi", //默认数据库
+    "port": "3306",
+    "connection": "charset=utf8;allow zero datetime=true;max pool size=2000;min pool size=1;connection lifetime=30;SSL Mode=none" //其他附属信息
+  }
+}

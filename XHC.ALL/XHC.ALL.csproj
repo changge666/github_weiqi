@@ -1,0 +1,93 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\skin\Admin\**" />
+    <Compile Remove="wwwroot\skin\Jquery\**" />
+    <Content Remove="wwwroot\skin\Admin\**" />
+    <Content Remove="wwwroot\skin\Jquery\**" />
+    <EmbeddedResource Remove="wwwroot\skin\Admin\**" />
+    <EmbeddedResource Remove="wwwroot\skin\Jquery\**" />
+    <None Remove="wwwroot\skin\Admin\**" />
+    <None Remove="wwwroot\skin\Jquery\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="log4net.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="log4net.config" />
+    <None Include="wwwroot\skin\getEcharts\getEcharts.js" />
+    <None Include="wwwroot\skin\layui\excel.js" />
+    <None Include="wwwroot\skin\layui\font\iconfont.svg" />
+    <None Include="wwwroot\skin\layui\font\iconfont.woff2" />
+    <None Include="wwwroot\skin\layui\layui.all.js" />
+    <None Include="wwwroot\skin\layui\layui.js" />
+    <None Include="wwwroot\skin\layui\lay\all-mobile.js" />
+    <None Include="wwwroot\skin\layui\lay\all.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\carousel.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\code.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\colorpicker.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\element.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\flow.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\form.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\jquery.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\laydate.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\layedit.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\layer.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\laypage.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\laytpl.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\mobile.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\mobile\layer-mobile.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\mobile\layim-mobile-open.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\mobile\upload-mobile.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\mobile\zepto.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\rate.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\slider.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\table.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\transfer.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\tree.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\upload.js" />
+    <None Include="wwwroot\skin\layui\lay\modules\util.js" />
+    <None Include="wwwroot\skin\layui\xm-select.js" />
+    <None Include="wwwroot\skin\Play\bootstrap-3.3.7-dist\css\bootstrap-theme.css.map" />
+    <None Include="wwwroot\skin\Play\bootstrap-3.3.7-dist\css\bootstrap-theme.min.css.map" />
+    <None Include="wwwroot\skin\Play\bootstrap-3.3.7-dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\skin\Play\bootstrap-3.3.7-dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\skin\Play\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\skin\Play\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\skin\Play\bootstrap-3.3.7-dist\js\bootstrap.js" />
+    <None Include="wwwroot\skin\Play\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\skin\Play\bootstrap-3.3.7-dist\js\jquery.js" />
+    <None Include="wwwroot\skin\Play\bootstrap-3.3.7-dist\js\npm.js" />
+    <None Include="wwwroot\skin\Play\js\custom.js" />
+    <None Include="wwwroot\skin\Play\js\jquery.contextMenu.min.js" />
+    <None Include="wwwroot\skin\Play\js\jquery.js" />
+    <None Include="wwwroot\skin\Play\js\jquery.nicescroll.min.js" />
+    <None Include="wwwroot\skin\xingkong\js\demo-1.js" />
+    <None Include="wwwroot\skin\xingkong\js\EasePack.min.js" />
+    <None Include="wwwroot\skin\xingkong\js\html5.js" />
+    <None Include="wwwroot\skin\xingkong\js\rAF.js" />
+    <None Include="wwwroot\skin\xingkong\js\TweenLite.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="log4net" Version="2.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\XHC.COM\XHC.COM.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\htmljs\Main\" />
+    <Folder Include="wwwroot\html\Main\" />
+  </ItemGroup>
+
+</Project>

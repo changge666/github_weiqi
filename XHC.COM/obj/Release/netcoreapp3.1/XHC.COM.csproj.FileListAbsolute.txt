@@ -1,0 +1,9 @@
+C:\Users\A\Desktop\围棋\XHC.ALL\XHC.COM\bin\Release\netcoreapp3.1\XHC.COM.deps.json
+C:\Users\A\Desktop\围棋\XHC.ALL\XHC.COM\bin\Release\netcoreapp3.1\XHC.COM.dll
+C:\Users\A\Desktop\围棋\XHC.ALL\XHC.COM\bin\Release\netcoreapp3.1\XHC.COM.pdb
+C:\Users\A\Desktop\围棋\XHC.ALL\XHC.COM\obj\Release\netcoreapp3.1\XHC.COM.csprojAssemblyReference.cache
+C:\Users\A\Desktop\围棋\XHC.ALL\XHC.COM\obj\Release\netcoreapp3.1\XHC.COM.AssemblyInfoInputs.cache
+C:\Users\A\Desktop\围棋\XHC.ALL\XHC.COM\obj\Release\netcoreapp3.1\XHC.COM.AssemblyInfo.cs
+C:\Users\A\Desktop\围棋\XHC.ALL\XHC.COM\obj\Release\netcoreapp3.1\XHC.COM.csproj.CoreCompileInputs.cache
+C:\Users\A\Desktop\围棋\XHC.ALL\XHC.COM\obj\Release\netcoreapp3.1\XHC.COM.dll
+C:\Users\A\Desktop\围棋\XHC.ALL\XHC.COM\obj\Release\netcoreapp3.1\XHC.COM.pdb

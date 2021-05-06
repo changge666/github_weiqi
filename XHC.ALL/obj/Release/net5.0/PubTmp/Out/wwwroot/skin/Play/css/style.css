@@ -1,0 +1,2487 @@
+﻿@charset "utf-8";
+
+/* Basic CSS starts */
+
+body{
+	font-family: '微软雅黑';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p{
+	margin:0;
+	padding:0;
+}
+ul {
+    list-style: none;
+}
+a{
+	/*font-weight: bold;*/
+	text-decoration:none;
+}
+.fontSize12{
+    font-size:12px;
+}
+.fontSize14{
+    font-size:14px;
+}
+a:hover,a:active,a:focus {
+	outline: 0;
+    text-decoration:none;
+}
+
+hr{
+	margin: 0;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #dbd8d8;
+}
+.l-left
+{
+    float:left;
+}
+.r-right
+{
+    float:right;
+}
+.pt15{
+    padding-top:15px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mb20 {
+    margin-bottom: 20px;
+}
+.mt60{
+    margin-top: 60px;
+}
+.mt-10{
+    margin-top: -10px;
+}
+.mt0{
+    margin-top:0px;
+}
+.pr30{
+    padding-right:80px;
+}
+.height10{
+    height:10px;
+}
+.height50{
+    height:50px;
+}
+.pnone{
+    padding:0px;
+}
+.w1200{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+}
+.divbg{
+    width:100%;
+    min-height: 500px;
+    overflow-y: auto;
+    background:url('../images/sidebar/sidebar_bgbig.png') no-repeat;
+    background-size: cover;
+}
+/***************************工具条***********************/
+.toolbar{
+    width:100%;
+    height:32px;
+    /*line-height:32px;*/
+    font-size:12px;
+    color:#9aa1d0;
+    text-align:center;
+    background:url('../images/toolbar/toolbar_bg.png') no-repeat;
+    background-size: cover;
+}
+.toolbar .title{
+    width: 50%;
+    float: left;
+    padding-top:8px;
+}
+.toolbar .tooldiv{
+    height:32px;
+    float:right;
+}
+.toolbar .tool{
+   width:30px;
+   height:32px;
+   display:inline-block;
+}
+.toolbar .tool_1{
+  background:url('../images/toolbar/toolbar_1.png') no-repeat;
+}
+.toolbar .tool_1:hover{
+  background:url('../images/toolbar/toolbar_2.png') no-repeat;
+}
+.toolbar .tool_1:active{
+  background:url('../images/toolbar/toolbar_3.png') no-repeat;
+}
+.toolbar .tool_2{
+  background:url('../images/toolbar/toolbar_31.png') no-repeat;
+}
+.toolbar .tool_2:hover{
+  background:url('../images/toolbar/toolbar_32.png') no-repeat;
+}
+.toolbar .tool_2:active{
+  background:url('../images/toolbar/toolbar_33.png') no-repeat;
+}
+.toolbar .tool_3{
+  background:url('../images/toolbar/toolbar_21.png') no-repeat;
+}
+.toolbar .tool_3:hover{
+  background:url('../images/toolbar/toolbar_22.png') no-repeat;
+}
+.toolbar .tool_3:active{
+  background:url('../images/toolbar/toolbar_23.png') no-repeat;
+}
+.toolbar .tool_4{
+  background:url('../images/toolbar/toolbar_11.png') no-repeat;
+}
+.toolbar .tool_4:hover{
+  background:url('../images/toolbar/toolbar_12.png') no-repeat;
+}
+.toolbar .tool_4:active{
+  background:url('../images/toolbar/toolbar_13.png') no-repeat;
+}
+/***************************菜单***********************/
+.menubar{
+    width:100%;
+    display:block;
+    height:54px;
+    background:#5162AA;
+    border-top:1px solid #7481BB;
+    -webkit-box-shadow:0px 2px 2px #AFB3B8;
+    -ms-box-shadow:0px 2px 2px #AFB3B8;
+    -moz-box-shadow:0px 2px 2px #AFB3B8;
+    -o-box-shadow:0px 2px 2px #AFB3B8;
+}
+.menubar.noneboxshadow{
+    box-shadow:none;
+}
+.menubar .M_box{
+    position:relative;
+    z-index: 999;
+}
+.menubar .menuLeft{
+    padding:0px;
+    position:absolute;
+    top:10px;
+    left:0px;
+}
+.menubar .menuRight{
+    padding:0px;
+    text-align:right;
+    position:absolute;
+    top:16px;
+    right:0px;
+}
+.menubar .menuLeft .menu{ 
+    padding:0px 20px;
+    text-align:center;
+    display:inline-block;
+    font-size:16px;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#E3E5F0;
+}
+.menubar .menuLeft .menu:hover,.menubar .menuLeft .menu.cur{ 
+    color:#FFFFFF;
+}
+.menubar .menuLeft .menu .logo{ 
+   width:34px;
+   height:34px;
+   -webkit-border-radius:50px;
+   -moz-border-radius:50px;
+   border-radius:50px;
+}
+.menubar .menuLeft .menu_1{
+     font-size:14px;
+     padding-right:58px;
+}
+.menubar .menuRight .menu{
+    color:#E3E5F0;
+    letter-spacing:1px;
+    text-align:center;
+    display:inline-block;
+}
+.menubar .menuRight .menu:hover{
+    color:#FFFFFF;
+}
+.menubar .menuRight .menu_2,.menubar .menuRight .menu_3,.menubar .menuRight .menu_4,.menubar .menuRight .menu_5{
+    width:20px;
+    height:18px;
+    padding-left:20px;
+    padding-right:20px;
+    vertical-align: sub;
+    position:relative;
+}
+.menubar .menuRight .menu_1{
+    padding-right:50px;
+}
+.menubar .menuRight .menu_1 .icon{
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    vertical-align: middle;
+    background:url('../images/menubar/menu_1.png') no-repeat;
+}
+.menubar .menuRight .menu_1:hover .icon{
+    background:url('../images/menubar/menu_2.png') no-repeat;
+}
+.menubar .menuRight .menu_1:active .icon{
+    background:url('../images/menubar/menu_3.png') no-repeat;
+}
+.menubar .menuRight .menu_2{
+    background:url('../images/menubar/menu_11.png') no-repeat;
+}
+.menubar .menuRight .menu_2:hover{
+    background:url('../images/menubar/menu_12.png') no-repeat;
+}
+.menubar .menuRight .menu_2:active{
+    background:url('../images/menubar/menu_13.png') no-repeat;
+}
+.menubar .menuRight .menu_3{
+    background:url('../images/menubar/menu_21.png') no-repeat;
+}
+.menubar .menuRight .menu_3:hover{
+    background:url('../images/menubar/menu_22.png') no-repeat;
+}
+.menubar .menuRight .menu_3:active{
+    background:url('../images/menubar/menu_23.png') no-repeat;
+}
+.menubar .menuRight .menu_4{
+    background:url('../images/menubar/menu_31.png') no-repeat;
+}
+.menubar .menuRight .menu_4:hover{
+    background:url('../images/menubar/menu_32.png') no-repeat;
+}
+.menubar .menuRight .menu_4:active{
+    background:url('../images/menubar/menu_33.png') no-repeat;
+}
+.menubar .menuRight .menu_5{
+    background:url('../images/menubar/menu_41.png') no-repeat;
+}
+.menubar .menuRight .menu_5:hover{
+    background:url('../images/menubar/menu_42.png') no-repeat;
+}
+.menubar .menuRight .menu_5:active{
+    background:url('../images/menubar/menu_43.png') no-repeat;
+}
+.menubar .menuRight .menu .menu_icon{
+    position:absolute;
+    top:0px;
+    right:19px;
+    padding:3px;
+    background:url('../images/sidebar/menu_icon.png') no-repeat;
+}
+
+/***************************侧栏***********************/
+.sidebar_left .sidebar_box{
+    width:100%;
+    height:664px;
+    margin:0 auto;
+    text-align:center;
+    background:url('../images/sidebar/sidebar_bg.png') no-repeat;
+}
+.sidebar_left .sidebar_box .sidebar{
+    width:168px;
+    height:62px;
+    cursor:pointer;
+}
+.sidebar_left .sidebar_box .sidebar_1{
+    background:url('../images/sidebar/sidebar_11.png') no-repeat;
+    background-position:15px 10px;
+}
+.sidebar_left .sidebar_box .sidebar_1:hover{
+    background:url('../images/sidebar/sidebar_12.png') no-repeat;
+}
+.sidebar_left .sidebar_box .sidebar_1:active{
+    background:url('../images/sidebar/sidebar_13.png') no-repeat;
+}
+.sidebar_left .sidebar_box .sidebar_2{
+    background:url('../images/sidebar/sidebar_21.png') no-repeat;
+    background-position:15px 10px;
+}
+.sidebar_box .sidebar_2:hover{
+    background:url('../images/sidebar/sidebar_22.png') no-repeat;
+}
+.sidebar_left .sidebar_box .sidebar_2:active{
+    background:url('../images/sidebar/sidebar_23.png') no-repeat;
+}
+.sidebar_left .sidebar_box .sidebar_3{
+    background:url('../images/sidebar/sidebar_31.png') no-repeat;
+    background-position:15px 10px;
+}
+.sidebar_box .sidebar_3:hover{
+    background:url('../images/sidebar/sidebar_32.png') no-repeat;
+}
+.sidebar_left .sidebar_box .sidebar_3:active{
+    background:url('../images/sidebar/sidebar_33.png') no-repeat;
+}
+.sidebar_left .sidebar_box .sidebar_4{
+    background:url('../images/sidebar/sidebar_41.png') no-repeat;
+    background-position:15px 10px;
+}
+.sidebar_left .sidebar_box .sidebar_4:hover{
+    background:url('../images/sidebar/sidebar_42.png') no-repeat;
+}
+.sidebar_box .sidebar_4:active{
+    background:url('../images/sidebar/sidebar_43.png') no-repeat;
+}
+.sidebar_left .sidebar_box .sidebar_5{
+    background:url('../images/sidebar/sidebar_51.png') no-repeat;
+    background-position:15px 10px;
+}
+.sidebar_left .sidebar_box .sidebar_5:hover{
+    background:url('../images/sidebar/sidebar_52.png') no-repeat;
+}
+.sidebar_left .sidebar_box .sidebar_5:active{
+    background:url('../images/sidebar/sidebar_53.png') no-repeat;
+}
+/***************************主题***********************/
+.content_box .title{
+    width: 100%;
+    padding: 10px 0px;
+    margin-top:36px;
+    border-bottom: 2px solid #627ab9;
+    font-size: 20px;
+    color: #627ab9;
+}
+.content_box .title.mt0{
+     margin-top:0px;
+}
+.content_box .title .aright{ 
+    color: #627ab9;
+    font-size:14px;
+    float:right;
+    padding-top:5px;
+}
+.content_box .list{ 
+    padding-top:30px;
+    padding-bottom:50px;
+}
+.content_box .list .item{ 
+    width:100%;
+    height:100%;
+    display:block;
+   -webkit-border-radius:10px;
+   -moz-border-radius:10px;
+   -o-border-radius:10px;
+   -ms-border-radius:10px;
+   border-radius:10px;
+   border:1px solid #DDD;
+   box-shadow:0px 10px 10px #ddd;
+   position:relative;
+}
+.content_box .list .item img{ 
+   -webkit-border-radius:10px;
+   -moz-border-radius:10px;
+   -o-border-radius:10px;
+   -ms-border-radius:10px;
+   border-radius:10px;
+}
+.content_box .list .item .text{ 
+   position:absolute;
+   bottom:0px;
+   left:0px;
+   width:100%;
+   padding:6px;
+   background: #000;
+   opacity:0.5;
+   color:#FFF;
+   text-align:center;
+   -webkit-bottom-left-radius:10px;
+   -moz-bottom-left-radius:10px;
+   -o-bottom-left-radius:10px;
+   -ms-bottom-left-radius:10px;
+   -webkit-bottom-right-radius:10px;
+   -moz-bottom-right-radius:10px;
+   -o-bottom-right-radius:10px;
+   -ms-bottom-right-radius:10px;
+   border-bottom-right-radius:10px;
+   border-bottom-left-radius:10px;
+}
+.content_box .list .item .tag{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:47px;
+    height:24px;
+   -webkit-top-left-radius:7px;
+   -moz-top-left-radius:7px;
+   -o-top-left-radius:7px;
+   -ms-top-left-radius:7px;
+   border-top-left-radius:7px;
+}
+.content_box .list .item .tag_1{
+    background:url('../images/tag/tag_1.png') no-repeat;
+}
+.content_box .list .item .tag_2{
+    background:url('../images/tag/tag_2.png') no-repeat;
+}
+.content_box .list .item .tag_3{
+    background:url('../images/tag/tag_3.png') no-repeat;
+}
+.content_box .list .item .tag_4{
+    background:url('../images/tag/tag_4.png') no-repeat;
+}
+.content_box .list img{
+    width:100%;
+    height:auto;
+}
+.row_new{
+    padding-top:30px;
+}
+.content_box .list_2{
+    width:100%;
+    height:100%;
+    box-shadow:0px 0px 10px #ddd;
+    -webkit-border-radius:10px;
+   -moz-border-radius:10px;
+   -o-border-radius:10px;
+   -ms-border-radius:10px;
+   border-radius:10px;
+}
+.content_box .list_2 li{
+    margin-left:10px;
+    margin-right:10px;
+    padding-top:20px;
+    padding-bottom:10px;
+    border-bottom:1px solid #DDD;
+}
+.content_box .list_2 li.lastli{
+    border-bottom:none;
+}
+.content_box .list_2 .item{
+    width:100%;
+    height:100%;
+    color:#333333;
+    font-size:16px;
+}
+.content_box .list_2 .item .icon{
+    width:48px;
+    height:20px;
+    background:url('../images/tag/tag_4.png') no-repeat;
+    display:inline-block;
+    vertical-align: middle;
+    margin-right:10px;
+}
+.content_box .list_2 .desc{
+    color:#999999;
+    font-size:12px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.content_box .img_1{
+    width:100%;
+    height:224px;
+    margin-bottom:16px;
+    -webkit-border-radius:10px;
+   -moz-border-radius:10px;
+   -o-border-radius:10px;
+   -ms-border-radius:10px;
+   border-radius:10px;
+   border:1px solid #DDD;
+   box-shadow:0px 10px 10px #ddd;
+}
+.content_box .img_2{
+    width:100%;
+    height:100px;
+    -webkit-border-radius:10px;
+   -moz-border-radius:10px;
+   -o-border-radius:10px;
+   -ms-border-radius:10px;
+   border-radius:10px;
+   border:1px solid #DDD;
+   box-shadow:0px 10px 10px #ddd;
+}
+.content_box_1{
+    min-height:600px;
+    overflow-y:auto;
+}
+.row_paihangbang .border_item{
+    border-bottom:2px solid #dedede;
+}
+.row_paihangbang .border_item.cur{
+    border-color:#7e8def;
+}
+.row_paihangbang .item{
+    display:block;
+    width:100%;
+    padding:30px 0px 15px 0px;
+    color:#999999;
+    font-size:18px;
+    text-align:center;
+}
+.row_paihangbang .border_item.cur .item{
+    color:#7e8def;
+}
+.paiHang .title_1{
+    padding:30px 0px 10px 0px;
+    width:100%;
+    text-align:center;
+    font-size:16px;
+}
+.paiHang_1 .title_1{
+   color:#FFAD54;
+}
+.paiHang_2 .title_1{
+   color:#8CDC19;
+}
+.paiHang_3 .title_1{
+   color:#FF6FC7;
+}
+.paiHang .tablelist th,.paiHang .tablelist td{
+    text-align:center;
+    border:none;
+    padding:12px;
+    color:#666666;
+    font-size:14px;
+}
+.paiHang_1 .tablelist th{
+    background:#FFAD54;
+}
+.paiHang_1 .tablelist tr:nth-of-type(2n+2){
+    background:#FFF1E2;
+}
+.paiHang_2 .tablelist th{
+    background:#8CDC19;
+}
+.paiHang_2 .tablelist tr:nth-of-type(2n+2){
+    background:#F2FFE0;
+}
+.paiHang_3 .tablelist th{
+    background:#FF6FC7;
+}
+.paiHang_3 .tablelist tr:nth-of-type(2n+2){
+    background:#FFE1F3;
+}
+.paiHang_1 .pager .span1 label{
+    color:#FFAD54;
+}
+.paiHang_2 .pager .span1 label{
+    color:#8CDC19;
+}
+.paiHang_3 .pager .span1 label{
+    color:#FF6FC7;
+}
+.pager .span2{
+    cursor:pointer;
+    width:36px;
+    height:20px;
+    display:inline-block;
+    vertical-align:middle;
+    background:url('../images/other/other_3.png') no-repeat;
+}
+.pager .span2:hover{
+    background:url('../images/other/other_4.png') no-repeat;
+}
+.pager .span2:active{
+    background:url('../images/other/other_5.png') no-repeat;
+}
+.pager .span4 label{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    vertical-align:middle;
+}
+.pager .span4 .label1.enable{
+    cursor:pointer;
+    background:url('../images/other/other_7.png') no-repeat;
+}
+.pager .span4 .label1.enable:hover{
+    background:url('../images/other/other_8.png') no-repeat;
+}
+.pager .span4 .label1.diasbed{
+    background:url('../images/other/other_6.png') no-repeat;
+}
+.pager .span4 .label2.enable{
+    cursor:pointer;
+    background:url('../images/other/other_11.png') no-repeat;
+}
+.pager .span4 .label2.enable:hover{
+    background:url('../images/other/other_12.png') no-repeat;
+}
+.pager .span4 .label2.diasbed{
+    background:url('../images/other/other_10.png') no-repeat;
+}
+/***************************登录，注册，找回***********************/
+.login_bg{
+    width:100%;
+    min-height:664px;
+    overflow-y:auto;
+    background:url('../images/login/login_bg.png') no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+.login_bg .login_box{
+    padding-right:60px;
+}
+.login_bg .login_con{
+    width:100%;
+    height:450px;
+    background:#FFFFFF;
+    margin-top:110px;
+    -webkit-box-shadow: 0px 0px 10px #ddd;
+    -moz-box-shadow: 0px 0px 10px #ddd;
+    -o-box-shadow: 0px 0px 10px #ddd;
+    -ms-box-shadow: 0px 0px 10px #ddd;
+    box-shadow: 0px 0px 10px #ddd;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+}
+.login_con h1 {
+    text-align: center;
+    color: #4350a4;
+    font-size: 24px;
+    padding:0px;
+    margin:0px;
+    margin-bottom:10px;
+    height:60px;
+    line-height:60px;
+}
+.login_con .div_error{
+     color:#F00;
+     padding:0px 20px;
+}
+.login_con .div_error .icon{
+    display:inline-block;
+    vertical-align:sub;
+    padding-right:20px;
+    width:14px;
+    height:14px;
+    background:url('../images/login/login_4.png') no-repeat;
+}
+.text_box>div{
+	padding:10px 20px;
+}
+.text_box>div>div{
+	height: 46px;
+	margin-bottom: 15px;
+	position: relative;
+}
+.text_box>div>div i{
+	width: 22px;
+	height: 22px;
+	overflow: hidden;
+	margin:10px;
+	position: absolute;
+}
+.text_box>div>div input{
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	background-color: #F4F6FC;
+    border:none;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #333;
+	text-indent: 44px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    -ms-border-radius:5px;
+}
+.text_box input:focus{
+	-webkit-box-shadow: 0px 0px 10px #7E8DEF;
+    -moz-box-shadow: 0px 0px 10px #7E8DEF;
+    -o-box-shadow: 0px 0px 10px #7E8DEF;
+    -ms-box-shadow: 0px 0px 10px #7E8DEF;
+    box-shadow: 0px 0px 10px #7E8DEF;
+}
+.text_box .yzm input{
+	width: 60%;
+}
+.text_box .yzm label {
+	width: 35%;
+    height: 43px;
+    line-height: 43px;
+    margin-left:5%;
+	text-align: center;
+	display: inline-block;
+    color:#FFFFFF;
+    background:#FFC24C;
+    cursor:pointer;
+    text-align:center;
+     -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    -ms-border-radius:5px;
+}
+.text_box .yzm label:hover{
+	-webkit-box-shadow: 0px 0px 10px #FFC24C;
+    -moz-box-shadow: 0px 0px 10px #FFC24C;
+    -o-box-shadow: 0px 0px 10px #FFC24C;
+    -ms-box-shadow: 0px 0px 10px #FFC24C;
+    box-shadow: 0px 0px 10px #FFC24C;
+}
+.text_box h3{
+	overflow: hidden;
+	margin-top: 24px;
+}
+.text_box h3 a{
+	font-size: 14px;
+	color: #666;
+    float:left;
+}
+.text_box h3 a:last-child{
+	float: right;
+}
+.text_box h3 .r-right{
+	float: right;
+}
+.text_box h3 a:hover{
+	text-decoration: underline;
+}
+.text_box h3 span{
+    font-size:14px;
+}
+.text_box .btnSubmit{
+	display: block;
+	width: 100%;
+	height: 45px;
+	font-size: 18px;
+	color: #fff;
+	line-height: 45px;
+	text-align: center;
+	background: #7E8DEF;
+	font-family: "微软雅黑";
+	margin-top:20px;
+	cursor: pointer;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    -ms-border-radius:5px;
+}
+.text_box .btnSubmit:hover{
+	background: #A2ADF3;
+}
+.text_box .btnSubmit:active{
+	background: #ABB6F3;
+}
+.text_box > .login-short{
+    padding:0px;
+    margin:30px 20px;
+    border-top:1px solid #E1E1E1;
+    position:relative;
+}
+.login-short h3 {
+    font-size: 14px;
+    line-height: 1;
+    padding: 0px;
+    color: #999;
+    position:absolute;
+    top: -32px;
+    left: 26%;
+    background: #FFF;
+    padding: 0px 10px;
+}
+.login-short li a {
+    margin-top:30px;
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+.login-short li .weixin {
+    background:url('../images/login/login_5.png') no-repeat;
+}
+.login-short li .weixin:hover {
+    background:url('../images/login/login_6.png') no-repeat;
+}
+.login-short li .qq {
+    background:url('../images/login/login_7.png') no-repeat;
+}
+.login-short li .qq:hover {
+    background:url('../images/login/login_8.png') no-repeat;
+}
+.login-short li .sina {
+    background:url('../images/login/login_9.png') no-repeat;
+}
+.login-short li .sina:hover {
+    background:url('../images/login/login_10.png') no-repeat;
+}
+/***************************视频详情***********************/
+.video_bg{
+    min-height:664px;
+    overflow-y:auto;
+    background:#2D2D2D;
+    padding-top: 15px;
+}
+.video_bg .video_title{
+    color:#EAEAEA;
+    font-size:16px;
+    padding:10px 0px 5px 0px;
+}
+.video_bg .video_mark{
+    color:#888989;
+    font-size:12px;
+}
+.video_bg .video_mark .share-component{
+    cursor:pointer;
+}
+.video_bg .video_mark .share-component:hover{
+    color:#7e8def;
+}
+.video_bg .video_mark .share-component .img-share {
+    display:inline-block;
+    width: 14px;
+    height: 14px;
+    vertical-align: sub;
+    margin-right:3px;
+    background:url('../images/other/other_14.png') no-repeat;
+}
+.video_bg .video_mark .share-component:hover .img-share{
+    background:url('../images/other/other_15.png') no-repeat;
+}
+.video_bg .video_mark .line {
+    display: inline-block;
+    height: 14px;
+    border-left: 1px solid #5c5a5a;
+    margin: 0 12px;
+    vertical-align: middle;
+}
+.video_player{
+    width:100%;
+    height:580px;
+}
+.video_con .title{
+    width:100%;
+    padding:0px 0px 5px 0px;
+    margin-bottom:20px;
+    font-size:16px;
+    color:#888989;
+    border-bottom:2px solid #888989;
+}
+.video_con .videolist{
+    height:580px;
+    overflow:hidden;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+.video_con .videolist .item{
+    height:70px;
+    margin-bottom:15px;
+}
+.video_con .videolist .item .p-img{
+    padding-left:0px;
+    padding-right:0px;
+}
+.video_con .videolist .item .p-img img{
+     width:100%;
+     height:70px;
+     cursor:pointer;
+     -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #DDD;
+}
+.video_con .videolist .item .p-con{
+    padding-right:0px;
+}
+.video_con .videolist .item .p-con .p-name{
+    color:#888989;
+    cursor:pointer;
+}
+.video_con .videolist .item .p-con .p-name:hover,.video_con .videolist .item.cur .p-con .p-name{
+    color:#7e8def;
+}
+.video_con .videolist .item .p-con .p-desc{
+    color:#666666;
+    padding-top:10px;
+}
+/***************************对弈***********************/
+.chess_bg{
+    width:100%;
+    min-height:718px;
+    overflow-y:auto;
+    background:url('../images/chess/chess_bg1.png') no-repeat;
+    background-size: 100% 100%;
+}
+.chess_A{
+    width:100%;
+    height:50px;
+    padding:10px;
+}
+.chess_A a{
+    width:42px;
+    height:43px;
+    cursor:pointer;
+    display:inline-block;
+    margin:0px 5px;
+}
+.chess_A .btnReturn{
+    background:url('../images/chess/chess_btn97.png') no-repeat;
+}
+.chess_A .btnReturn:hover{
+    background:url('../images/chess/chess_btn96.png') no-repeat;
+}
+.chess_A .btnReturn:active{
+    background:url('../images/chess/chess_btn95.png') no-repeat;
+}
+.chess_A .btnFullScreen{
+    background:url('../images/chess/chess_btn94.png') no-repeat;
+}
+.chess_A .btnFullScreen:hover{
+    background:url('../images/chess/chess_btn93.png') no-repeat;
+}
+.chess_A .btnFullScreen:active{
+    background:url('../images/chess/chess_btn92.png') no-repeat;
+}
+.chess_A .btnUpload{
+    background:url('../images/chess/chess_btn67.png') no-repeat;
+}
+.chess_A .btnUpload:hover{
+    background:url('../images/chess/chess_btn66.png') no-repeat;
+}
+.chess_A .btnUpload:active{
+    background:url('../images/chess/chess_btn65.png') no-repeat;
+}
+.chess_B{
+    padding:7px 0px;
+}
+.chess_B .divimg{
+    margin:0 auto;
+    text-align:center;
+}
+.chess_B .divimg img{
+    max-width:100%;
+    display:initial;
+}
+.chess_B .divbox{
+    width:100%;
+    min-height:618px;
+    overflow-y:auto;
+    border:2px solid #7E8DEF;
+    background:#FFF;
+    padding:15px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+.chess_B .divbox .item,.chess_B .divbox .item2{
+    overflow-y:auto;
+    padding:15px 0px;
+}
+.chess_B .divbox .item2{
+    padding-bottom:30px;
+    border-bottom:1px solid #CCCCCC;
+}
+.chess_B .divbox .item .p-img,.chess_B .divbox .item2 .p-img{
+    text-align:center;
+}
+.chess_B .divbox .item.pt30{
+    padding-top:30px;
+}
+.chess_B .divbox .item img{
+    width:110px;
+    height:110px;
+    border:1px solid #DDD;
+    -webkit-border-radius:100%;
+    -moz-border-radius:100%;
+    border-radius:100%;
+}
+.chess_B .divbox .item .p-name{
+    font-size:18px;
+}
+.chess_B .divbox .item .p-desc{
+    font-size:15px;
+    padding-top:15px;
+}
+.chess_B .divbox .item .p-desc span{
+   display:inline-block;
+   width:72%;
+   padding-left:5px;
+   border:1px solid #333333;
+}
+.chess_B .divbox .item2 img{
+    width:42px;
+    height:42px;
+}
+.chess_B .divbox .item2 .p-desc{
+   width:100%;
+   background:#D0D8FF;
+   text-align:center;
+}
+.chess_B .divbox .item2 .p-desc span{
+   color:#7E8DEF;
+   font-size:25px;
+}
+.chess_B .divbox .item3 .p-img{
+    padding:0px;
+}
+.chess_B .divbox .item3 .btn{
+  width:100px;
+  height:40px;
+  margin-top:15px;
+}
+.chess_B .divbox .item3 .btn_01{
+  background:url('../images/chess/chess_btn18.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_01:hover{
+  background:url('../images/chess/chess_btn17.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_01:active{
+  background:url('../images/chess/chess_btn16.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_02{
+  background:url('../images/chess/chess_btn15.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_02:hover{
+  background:url('../images/chess/chess_btn14.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_02:active{
+  background:url('../images/chess/chess_btn13.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_03{
+  background:url('../images/chess/chess_btn6.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_03:hover{
+  background:url('../images/chess/chess_btn5.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_03:active{
+  background:url('../images/chess/chess_btn4.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_04{
+  background:url('../images/chess/chess_btn12.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_04:hover{
+  background:url('../images/chess/chess_btn11.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_04:active{
+  background:url('../images/chess/chess_btn10.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_05{
+  background:url('../images/chess/chess_btn9.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_05:hover{
+  background:url('../images/chess/chess_btn8.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_05:active{
+  background:url('../images/chess/chess_btn7.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_06{
+  background:url('../images/chess/chess_btn3.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_06:hover{
+  background:url('../images/chess/chess_btn2.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_06:active{
+  background:url('../images/chess/chess_btn1.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_07{
+  background:url('../images/chess/chess_btn21.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_07:hover{
+  background:url('../images/chess/chess_btn20.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_07:active{
+  background:url('../images/chess/chess_btn19.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_08{
+  background:url('../images/chess/chess_btn27.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_08:hover{
+  background:url('../images/chess/chess_btn26.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_08:active{
+  background:url('../images/chess/chess_btn25.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_08.diasbed{
+    cursor:default;
+  background:url('../images/chess/chess_btn28.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_09{
+  background:url('../images/chess/chess_btn34.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_09:hover{
+  background:url('../images/chess/chess_btn33.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_09:active{
+  background:url('../images/chess/chess_btn32.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_10{
+  background:url('../images/chess/chess_btn31.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_10:hover{
+  background:url('../images/chess/chess_btn30.png') no-repeat;
+}
+.chess_B .divbox .item3 .btn_10:active{
+  background:url('../images/chess/chess_btn29.png') no-repeat;
+}
+.div_03 .btn{
+  width:100px;
+  height:40px;
+  margin-top:15px;
+}
+.div_03 .btn_11{
+  background:url('../images/chess/chess_btn28.png') no-repeat;
+}
+.div_03 .btn_11:hover{
+  background:url('../images/chess/chess_btn27.png') no-repeat;
+}
+.div_03 .btn_11:active{
+  background:url('../images/chess/chess_btn28.png') no-repeat;
+}
+.div_03 .btn_12{
+  background:url('../images/chess/chess_btn126.png') no-repeat;
+}
+.div_03 .btn_12:hover{
+  background:url('../images/chess/chess_btn125.png') no-repeat;
+}
+.div_03 .btn_12:active{
+  background:url('../images/chess/chess_btn124.png') no-repeat;
+}
+.div_03 .btn_13{
+  background:url('../images/chess/chess_btn120.png') no-repeat;
+}
+.div_03 .btn_13:hover{
+  background:url('../images/chess/chess_btn119.png') no-repeat;
+}
+.div_03 .btn_13:active{
+  background:url('../images/chess/chess_btn118.png') no-repeat;
+}
+.div_03 .btn_14{
+  background:url('../images/chess/chess_btn123.png') no-repeat;
+}
+.div_03 .btn_14:hover{
+  background:url('../images/chess/chess_btn122.png') no-repeat;
+}
+.div_03 .btn_14:active{
+  background:url('../images/chess/chess_btn121.png') no-repeat;
+}
+.chess_B .wqList{
+    padding:0px;
+}
+.chess_B .wqList li a{
+    display:block;
+    width:90px;
+    height:90px;
+    cursor:pointer;
+    margin-bottom:10px;
+    border:2px solid #FFF;
+    background:url('../images/chess/chess_awq3.png') no-repeat;
+}
+.chess_B .wqList li a:hover,.chess_B .wqList li a.cur{
+    border-color:#7E8DEF;
+}
+.chess_B .divbox .item4{
+    text-align:center;
+}
+.chess_B .divbox .item4 .btnDuiju{
+    width:228px;
+    height:50px;
+    display:inline-block;
+    background:url('../images/chess/chess_btn58.png') no-repeat;
+}
+.chess_B .divbox .item4 .btnDuiju:hover{
+    background:url('../images/chess/chess_btn57.png') no-repeat;
+}
+.chess_B .divbox .item4 .btnDuiju:active{
+    background:url('../images/chess/chess_btn56.png') no-repeat;
+}
+.chess_B .divbox .item5{
+    height:162px;
+}
+.chess_B .divbox .item5 ul li{
+    text-align:center;
+    padding:5px 0px;
+    background:#D0D8FF;
+    border-right:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+.chess_B .divbox .item6 .title{ 
+    height:48px;
+}
+.chess_B .divbox .item6 .border_item{
+    border-bottom: 2px solid #dedede;
+}
+.chess_B .divbox .item6 .border_item.cur{
+    border-bottom: 2px solid #7e8def;
+}
+.chess_B .divbox .item6 .item {
+    display: block;
+    width: 100%;
+    padding: 15px 0px 10px 0px;
+    color: #999999;
+    font-size: 16px;
+    text-align: center;
+}
+.chess_B .divbox .item6.cur .item {
+    color: #7e8def;
+}
+.chess_B .divbox .item6 .content{
+    width:100%;
+    background:#EDF0FF;
+    border:1px solid #7e8def;
+    -webkit-border-bottom-left-radius:5px;
+    -moz-border-bottom-left-radius:5px;
+    border-bottom-left-radius:5px;
+   -webkit-border-bottom-right-radius:5px;
+    -moz-border-bottom-right-radius:5px;
+   border-bottom-right-radius:5px;
+}
+.chess_B .divbox .item6 .content .desc{
+    width:100%;
+    height:140px;
+    padding:5px;
+    border-bottom:1px solid #7e8def;
+}
+.chess_B .divbox .item6 .content .desc p{
+   color:#7e8def;
+}
+.chess_B .divbox .item6 .content .liaotian{
+    padding:5px;
+}
+.chess_B .divbox .item6 .content .liaotian .huatong{
+    display:inline-block;
+    width:16px;
+    height:24px;
+    cursor:pointer;
+    vertical-align:middle;
+    background:url('../images/chess/chess_btn107.png') no-repeat;
+}
+.chess_B .divbox .item6 .content .liaotian .huatong:hover{
+    background:url('../images/chess/chess_btn106.png') no-repeat;
+}
+.chess_B .divbox .item6 .content .liaotian .neirong input{
+    display:inline-block;
+    width:65%;
+    height:24px;
+    color:#7e8def;
+    border:none;
+    background:none;
+    vertical-align:middle;
+}
+.chess_B .divbox .item6 .content .liaotian .biaoqing{
+    display:inline-block;
+    width:25px;
+    height:24px;
+    cursor:pointer;
+    vertical-align:middle;
+    background:url('../images/chess/chess_btn105.png') no-repeat;
+}
+.chess_B .divbox .item6 .content .liaotian .biaoqing:hover{
+    background:url('../images/chess/chess_btn104.png') no-repeat;
+}
+.chess_B .divbox .item6 .content-2{
+    background:none;
+}
+.chess_B .divbox .item6 .content .tablelist th{
+    text-align:center;
+    background:#A2ADF3;
+    color:#FFFFFF;
+    border:none;
+}
+.chess_B .divbox .item6 .content .tablelist td{
+    text-align:center;
+    color:#889AFF;
+    border-bottom:1px solid #D0D8FF;
+}
+.chess_B .divbox .item6 .content .tablelist tr:last-child td{
+    border-bottom:none;
+}
+.chess_B .divbox .item6 .content .tablelist td .btnHaoyou{
+    display:inline-block;
+    width:72px;
+    height:22px;
+    background:url('../images/chess/chess_btn61.png') no-repeat;
+}
+.chess_B .divbox .item6 .content .tablelist td .btnHaoyou:hover{
+    background:url('../images/chess/chess_btn60.png') no-repeat;
+}
+.chess_B .divbox .item6 .content .tablelist td .btnHaoyou:active{
+    background:url('../images/chess/chess_btn59.png') no-repeat;
+}
+.chess_B .divbottom{
+    padding-top:15px;
+    text-align:center;
+}
+.chess_B .divbottom .btn_bottom{
+    display:inline-block;
+    vertical-align:middle;
+    float:none;
+}
+.chess_B .divbottom .btn_bottom1,.chess_B .divbottom .btn_bottom2,.chess_B .divbottom .btn_bottom3,.chess_B .divbottom .btn_bottom4,.chess_B .divbottom .btn_bottom5,.chess_B .divbottom .btn_bottom6,.chess_B .divbottom .btn_bottom8{
+    width:40px;
+    height:40px;
+}
+.chess_B .divbottom .btn_bottom7{
+    width:61px;
+    height:39px;
+    line-height:39px;
+}
+.chess_B .divbottom .btn_bottom9,.chess_B .divbottom .btn_bottom10,.chess_B .divbottom .btn_bottom11{
+    width:47px;
+    height:48px;
+}
+.chess_B .divbottom .btn_bottom1{
+    background:url('../images/chess/chess_btn74.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom1:hover{
+    background:url('../images/chess/chess_btn73.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom1:active{
+    background:url('../images/chess/chess_btn72.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom2{
+    background:url('../images/chess/chess_btn82.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom2:hover{
+    background:url('../images/chess/chess_btn81.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom2:active{
+    background:url('../images/chess/chess_btn80.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom3{
+    background:url('../images/chess/chess_btn90.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom3:hover{
+    background:url('../images/chess/chess_btn89.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom3:active{
+    background:url('../images/chess/chess_btn88.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom4{
+    background:url('../images/chess/chess_btn86.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom4:hover{
+    background:url('../images/chess/chess_btn85.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom4:active{
+    background:url('../images/chess/chess_btn84.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom5{
+    background:url('../images/chess/chess_btn78.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom5:hover{
+    background:url('../images/chess/chess_btn77.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom5:active{
+    background:url('../images/chess/chess_btn76.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom6{
+    background:url('../images/chess/chess_btn70.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom6:hover{
+    background:url('../images/chess/chess_btn69.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom6:active{
+    background:url('../images/chess/chess_btn68.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom7{
+    color:#FFF;
+    font-weight:bold;
+    cursor:default;
+    background:url('../images/chess/chess_btn117.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom8{
+    background:url('../images/chess/chess_btn64.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom8:hover{
+    background:url('../images/chess/chess_btn63.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom8:active{
+    background:url('../images/chess/chess_btn62.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom9{
+    background:url('../images/chess/chess_btn43.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom9:hover{
+    background:url('../images/chess/chess_btn42.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom9:active{
+    background:url('../images/chess/chess_btn42.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom10{
+    background:url('../images/chess/chess_btn52.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom10:hover{
+    background:url('../images/chess/chess_btn51.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom10:active{
+    background:url('../images/chess/chess_btn50.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom11{
+    background:url('../images/chess/chess_btn46.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom11:hover{
+    background:url('../images/chess/chess_btn45.png') no-repeat;
+}
+.chess_B .divbottom .btn_bottom11:active{
+    background:url('../images/chess/chess_btn44.png') no-repeat;
+}
+.chess_B .item7{
+    width:100%;
+    min-height:340px;
+    overflow-y:auto;
+    border:1px solid #7E8DEF;
+    background:#FFF;
+    margin-top:20px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:2px;
+    border-radius:2px;
+}
+.chess_B .item7 .title{
+    width:100%;
+    height:50px;
+    line-height:50px;
+    font-size:20px;
+    text-align:center;
+    color:#FFFFFF;
+    background:#7E8DEF;
+    position:relative;
+}
+.chess_B .item7 .title .btnclose{
+    position:absolute;
+    right:7px;
+    top:7px;
+    width:14px;
+    height:14px;
+    font-size:16px;
+    text-align:center;
+    color:#FFFFFF;
+    background:#7E8DEF;
+    background:url('../images/chess/chess_btn110.png') no-repeat;
+}
+.chess_B .item7 .title .btnclose:hover{
+    background:url('../images/chess/chess_btn111.png') no-repeat;
+}
+.chess_B .item7 .content ul{
+    height:215px;
+}
+.chess_B .item7 .content ul li{
+    text-align:center;
+    padding:15px 0px;
+}
+.chess_B .item7 .content ul li img{
+    padding-bottom:15px;
+}
+.chess_B .item7 .content ul li.li-1{
+    border-right:1px solid #ddd;
+}
+.chess_B .item7 .content ul li.li-1,.chess_B .item7 .content ul li.li-2{
+    font-size:16px;
+}
+.chess_B .item7 .content .tishi{
+    text-align:center;
+    font-size:16px;
+    color:#7E8DEF;
+}
+.wqConx{
+    padding-right:0px;
+}
+.chess_C {
+    max-width:1000px;
+    margin:0 auto;
+    padding-top:28px;
+}
+.chess_C .item{
+    padding-bottom:15px;
+}
+.chess_C .item .top{
+    position:relative;
+}
+.chess_C .item .div1{
+    width:100%;
+    height:25px;
+    line-height:25px;
+    background:#A2ADF3;
+}
+.chess_C .item .div2{
+    width:100%;
+    height:25px;
+    line-height:25px;
+    background:#7E8DEF;
+    color:#FFF;
+}
+.chess_C .item .div3{
+   display:block;
+   width:34px;
+   height:50px;
+   position:absolute;
+   z-index:999;
+   top:0px;
+   right:0px;
+   background:url('../images/chess/chess_btn55.png') no-repeat;
+}
+.chess_C .item .div3:hover{
+   background:url('../images/chess/chess_btn54.png') no-repeat;
+}
+.chess_C .item .div3:active{
+   background:url('../images/chess/chess_btn53.png') no-repeat;
+}
+.chess_C .item .bottom img{
+    width:100%;
+}
+.white_content {
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -o-border-radius:5px;
+    border-radius:5px;
+}
+.white_content .title{
+    background:#7E8DEF;
+    font-size:16px;
+    color:#FFFFFF;
+    height:50px;
+    line-height:50px;
+    padding-left:10px;
+}
+.white_content .btnclose {
+    width: 30px;
+    float: right;
+    clear: both;
+    text-align: right;
+    margin: 0 0 6px 0;
+}
+.white_content .btnclose a {
+    display:block;
+    width: 14px;
+    height: 14px;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #7E8DEF;
+    margin: 10px 10px 0px 0px;
+    background: url('../images/chess/chess_btn110.png') no-repeat;
+}
+.white_content .btnclose a:hover{
+    background: url('../images/chess/chess_btn111.png') no-repeat;
+}
+.white_content .conbox {
+    padding: 25px;
+}
+.white_content .conbox .div1,.white_content .conbox .div2,.white_content .conbox .div3,.white_content .conbox .div4,.white_content .conbox .div5,.white_content .conbox .div6{
+     text-align:center;
+     padding:10px 0px;
+     font-size:16px;
+}
+.white_content .conbox .div2{
+    padding:10px 0px 30px 0px;
+}
+.white_content .conbox .div6{
+    padding:30px 0px;
+}
+.white_content .conbox .div1{
+    font-size:20px;
+}
+.white_content .conbox .div2{
+    color:#7E8DEF;
+}
+.white_content .conbox .div3,.white_content .conbox .div4{
+    font-size:16px;
+}
+.white_content .conbox .form-control{
+    width:130px;
+    margin:0px 5px;
+    display:inline-block;
+    vertical-align:middle;
+}
+.white_content .conbox .label{
+    cursor:pointer;
+    color: #333;
+    font-size:16px;
+    font-weight:normal;
+}
+.white_content .conbox .btnSubmit{
+    width:88px;
+    height:34px;
+    display:inline-block;
+    background: url('../images/chess/chess_btn40.png') no-repeat;
+}
+.white_content .conbox .btnSubmit:hover{
+    background: url('../images/chess/chess_btn39.png') no-repeat;
+}
+.white_content .conbox .btnSubmit:active{
+    background: url('../images/chess/chess_btn38.png') no-repeat;
+}
+.white_content .conbox .btnCancel{
+    width:88px;
+    height:34px;
+    display:inline-block;
+    background: url('../images/chess/chess_btn37.png') no-repeat;
+}
+.white_content .conbox .btnCancel:hover{
+    background: url('../images/chess/chess_btn36.png') no-repeat;
+}
+.white_content .conbox .btnCancel:active{
+    background: url('../images/chess/chess_btn35.png') no-repeat;
+}
+.white_content .conbox ul li{
+    text-align:center;
+}
+.white_content .conbox ul li a {
+    margin-top: 30px;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+}
+.white_content .conbox ul li div{
+   font-size:18px;
+}
+.white_content .conbox .weixin{
+    background: url('../images/chess/chess_btn101.png') no-repeat;
+}
+.white_content .conbox .weixin:hover{
+    background: url('../images/chess/chess_btn100.png') no-repeat;
+}
+.white_content .conbox .qq{
+    background: url('../images/chess/chess_btn99.png') no-repeat;
+}
+.white_content .conbox .qq:hover{
+    background: url('../images/chess/chess_btn98.png') no-repeat;
+}
+.white_content .conbox .sina{
+    background: url('../images/chess/chess_btn103.png') no-repeat;
+}
+.white_content .conbox .sina:hover{
+    background: url('../images/chess/chess_btn102.png') no-repeat;
+}
+.white_content_1{
+    top:10%;
+    left:22%;
+    width:810px;
+    height:687px;
+    overflow:hidden;
+    background: url('../images/chess/chess_bg4.png') no-repeat;
+}
+.white_content_1 .white_content_box{
+    position:relative;
+}
+.white_content_1 .div_01{
+    font-size:18px;
+    font-weight:bold;
+    color:#FFFFFF;
+    position:absolute;
+    top:215px;
+    left:280px;
+}
+.white_content_1 .div_02{
+    font-size:30px;
+    color:#685fa1;
+    position:absolute;
+    top:280px;
+    left:320px;
+}
+.white_content_1 .div_03{
+    height:420px;
+    position:absolute;
+    top:350px;
+    left:50px;
+}
+.white_content_1 .div_zx,.white_content_1 .div_wz{
+    text-align:center;
+}
+.white_content_1 .div_zx{
+    /*border-right:1px solid #ddd;*/
+}
+.white_content_1 .div_tag{
+    width:173px;
+    height:126px;
+    background: url('../images/chess/chess_bg3.png') no-repeat;
+    position:absolute;
+    top:210px;
+    right:0px;
+}
+.white_content_1 .btnclose{
+     width: 50px;
+     position: absolute;
+    right: 0px;
+    top: 100px;
+    margin: 0px;
+}
+.white_content_1 .btnclose a{
+    width: 32px;
+    height: 32px;
+    margin:0px;
+    background: url('../images/chess/chess_btn129.png') no-repeat;
+}
+.white_content_1 .btnclose a:hover{
+    background: url('../images/chess/chess_btn128.png') no-repeat;
+}
+.black_overlay {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 1001;
+    -moz-opacity: 0.5;
+    opacity: .50;
+    filter: alpha(opacity=80);
+}
+/***************************好友***********************/
+.friend_bg{
+    width: 100%;
+    min-height: 664px;
+    overflow-y: auto;
+    background: url('../images/login/login_bg.png') no-repeat;
+    background-size: auto auto;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+.friend_bg .friend_box{
+    position:relative;
+    float:right;
+    width:260px;
+    height:540px;
+    background:#FFFFFF;
+    border:1px solid #7E8DEF;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    -webkit-transition: all 0.5s;
+    -moz--transition: all 0.5s;
+    transition: all 0.5s;
+}
+.friend_bg .friend_box .friend_title{
+    width:100%;
+    height:80px;
+    background:#7E8DEF;
+    position:relative;
+}
+.friend_bg .friend_box .friend_title .title{
+   font-size:16px;
+   color:#FFFFFF;
+   position:absolute;
+   top:5px;
+   left:10px;
+}
+.friend_bg .friend_box .friend_title .f_small{
+   position:absolute;
+   top:5px;
+   right:10px;
+   width:14px;
+   height:14px;
+   background: url('../images/friend/chess_13.png') no-repeat;
+}
+.friend_bg .friend_box .friend_title .f_small:hover{
+   background: url('../images/friend/chess_12.png') no-repeat;
+}
+.friend_bg .friend_box .friend_title .f_close{
+   position:absolute;
+   top:15px;
+   right:35px;
+   width:14px;
+   height:14px;
+   background: url('../images/friend/chess_30.png') no-repeat;
+}
+.friend_bg .friend_box .friend_title .f_close:hover{
+   background: url('../images/friend/chess_29.png') no-repeat;
+}
+.friend_bg .friend_box .friend_title .qq-serch{
+    position:absolute;
+    top:45px;
+    left:20px;
+    width: 220px;
+    height: 25px;
+    padding: 0 10px;
+    background:#FFFFFF url(../images/friend/chess_31.png) no-repeat;
+    background-position: 5px;
+    border:1px solid #FFFFFF;
+    color: #666666;
+    line-height: 25px;
+    text-indent:20px;
+     -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+}
+.friend_bg .friend_box .friend_tab{
+    height:40px;
+    line-height:40px;
+    background:#EDF0FF;
+    border-bottom:1px solid #7E8DEF;
+}
+.friend_bg .friend_box .friend_tab li{
+    text-align:center;
+}
+.friend_bg .friend_box .friend_tab .tab1 div{
+    cursor:pointer;
+    display:inline-block;
+    width:26px;
+    height:31px;
+    background:url(../images/friend/chess_21.png) no-repeat;
+    margin-top:8px;
+    border-bottom:2px solid #EDF0FF;
+}
+.friend_bg .friend_box .friend_tab .tab1 div:hover,.friend_bg .friend_box .friend_tab .tab1.cur div{
+    background:url(../images/friend/chess_20.png) no-repeat;
+    border-color:#7e8def;
+}
+.friend_bg .friend_box .friend_tab .tab2 div{
+    cursor:pointer;
+    display:inline-block;
+    width:26px;
+     height:31px;
+    background:url(../images/friend/chess_23.png) no-repeat;
+    margin-top:8px;
+    border-bottom:2px solid #EDF0FF;
+}
+.friend_bg .friend_box .friend_tab .tab2 div:hover,.friend_bg .friend_box .friend_tab .tab2.cur div{
+    background:url(../images/friend/chess_22.png) no-repeat;
+    border-color:#7e8def;
+}
+.friend_bg .friend_box .friend_list{
+    width:100%;
+    height:380px;
+    overflow:hidden;
+    -webkit-transition-duration: 300ms;
+    -moz-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
+}
+.friend_bg .friend_box .friend_list .item .zdmenu{
+    margin:0px 10px 10px 10px;
+    text-indent: 15px;
+    cursor:pointer;
+    background:url(../images/friend/chess_25.png) no-repeat;
+    background-position: 0px 5px;
+}
+.friend_bg .friend_box .friend_list .item.down .zdmenu{
+    background:url(../images/friend/chess_27.png) no-repeat;
+    background-position: 0px 8px;
+}
+.friend_bg .friend_box .friend_list .item ul{
+    display:none;
+    margin: 5px 0px;
+}
+.friend_bg .friend_box .friend_list .item.down ul{
+    display:block;
+}
+.friend_bg .friend_box .friend_list .item ul li{
+    height: 58px;
+    padding-top:12px;
+    padding-bottom:5px;
+}
+.friend_bg .friend_box .friend_list .item ul li:hover,.friend_bg .friend_box .friend_list .item ul li.cur{
+    background:#F5F5F5;
+}
+.friend_bg .friend_box .friend_list .item h5{
+    padding:0px;
+    margin:0px;
+}
+.friend_bg .friend_box .friend_list .item p{
+   font-size:12px;
+   color:#999999;
+}
+.friend_bg .friend_box .friend_list .item img{
+    width:35px;
+    height:35px;
+    vertical-align:middle;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+}
+.friend_bg .friend_box .friend_list .item .midd{
+    padding:0px;
+}
+.friend_bg .friend_box .friend_list .item .btn{
+    width:73px;
+    height:25px;
+}
+.friend_bg .friend_box .friend_list .item .btnDuizhan{
+    background:url(../images/friend/chess_19.png) no-repeat;
+}
+.friend_bg .friend_box .friend_list .item .btnDuizhan:hover{
+    background:url(../images/friend/chess_18.png) no-repeat;
+}
+.friend_bg .friend_box .friend_list .item .btnDuizhan:hover{
+    background:url(../images/friend/chess_17.png) no-repeat;
+}
+.friend_bg .friend_box .friend_list .item .btnGuanzhan{
+    background:url(../images/friend/chess_16.png) no-repeat;
+}
+.friend_bg .friend_box .friend_list .item .btnGuanzhan:hover{
+    background:url(../images/friend/chess_15.png) no-repeat;
+}
+.friend_bg .friend_box .friend_list .item .btnGuanzhan:hover{
+    background:url(../images/friend/chess_14.png) no-repeat;
+}
+.friend_bg .friend_box .friend_list .item .myinfo{
+    display:none;
+    position: absolute;
+    top: 150px;
+    right: 270px;
+    z-index: 9999;
+}
+.white_content_2{
+    left:40%;
+    width:300px;
+    height:320px;
+    background:#FFFFFF;
+    border:1px solid #7E8DEF;
+}
+.white_content_2 .btnclose2{
+    width:14px;
+    height:14px;
+    position:absolute;
+    top:10px;
+    right:10px;
+    cursor:pointer;
+    background:url(../images/friend/chess_13.png) no-repeat;
+}
+.white_content_2 .btnclose2:hover{
+    opacity:0.8;
+}
+.white_content_2 .btnsmall2{
+    width:14px;
+    height:2px;
+    position:absolute;
+    top:22px;
+    right:35px;
+    cursor:pointer;
+    background:url(../images/friend/chess_30.png) no-repeat;
+}
+.white_content_2 .btnsmall2:hover{
+    opacity:0.8;
+}
+.white_content_2 .divContent{
+    position:absolute;
+    top:50px;
+    left:0px;
+    width:100%;
+}
+.white_content_2 .divContent .div{
+    padding:2px 0px;
+}
+.white_content_2 .divContent .div1{
+    font-size:16px;
+}
+.white_content_2 .divContent img{
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:50px;
+}
+.white_content_2 .divContent .conten1{
+   height:110px;
+   border-bottom:1px solid #DDD;
+}
+.white_content_2 .divContent .conten2{
+   height:35px;
+   padding:5px 0px;
+}
+.white_content_2 .divContent .conten2 .icon{
+   display:inline-block;
+   width:20px;
+   height:14px;
+}
+.white_content_2 .divContent .conten2 .textright{
+    text-align:right;
+}
+.white_content_2 .divContent .conten2 .iconleft{
+   background:url(../images/friend/chess_38.png) no-repeat;
+}
+.white_content_2 .divContent .conten2 .iconleft:hover{
+   background:url(../images/friend/chess_37.png) no-repeat;
+}
+.white_content_2 .divContent .conten2 .iconleft.diasbed{
+    cursor:default;
+   background:url(../images/friend/chess_36.png) no-repeat;
+}
+.white_content_2 .divContent .conten2 .iconright{
+   background:url(../images/friend/chess_41.png) no-repeat;
+}
+.white_content_2 .divContent .conten2 .iconright:hover{
+   background:url(../images/friend/chess_40.png) no-repeat;
+}
+.white_content_2 .divContent .conten2 .iconright.diasbed{
+    cursor:default;
+   background:url(../images/friend/chess_39.png) no-repeat;
+}
+.white_content_2 .divContent .conten3{
+   height:45px;
+}
+.white_content_2 .divContent .conten3 .item{
+  padding:5px 10px;
+}
+.white_content_2 .divContent .conten3 .img{
+   width:30px;
+   height:30px;
+}
+.white_content_2 .divContent .conten4{
+   height:30px;
+   text-align:center;
+   margin-top:20px;
+}
+.white_content_2 .divContent .conten4 .btnJiaHaoyou{
+    display:inline-block;
+    width:260px;
+   height:34px;
+   background:url(../images/friend/chess_35.png) no-repeat;
+}
+.white_content_2 .divContent .conten4 .btnJiaHaoyou:hover{
+   background:url(../images/friend/chess_34.png) no-repeat;
+}
+.white_content_2 .divContent .conten4 .btnJiaHaoyou:active{
+   background:url(../images/friend/chess_33.png) no-repeat;
+}
+.white_content_3{
+    position:initial;
+    height:210px;
+} 
+.white_content_3 .divContent{
+    top:1px;
+}
+.white_content_3 .divContent .conten1{
+    padding-top:15px;
+    background:#7E8DEF;
+    color:#FFFFFF;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
+    -o-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -o-border-top-right-radius: 5px;
+    border-top-right-radius:5px;
+}
+.friend_bg .friend_box .friend_list .item .white_content_3 .divContent .conten1 img{
+    width:80px;
+    height:80px;
+}
+.white_content_4{
+    width:45%;
+    top:11.3%;
+    left:20%;
+}
+.white_content_4 .divDialog{
+    width:100%;
+    height:295px;
+    overflow:hidden;
+}
+.white_content_4 .divDialog .msg_more{
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+    color: #7E8DEF;
+    cursor: pointer;
+    display: block;
+}
+.white_content_4 .divDialog .msg_more:hover{
+    text-decoration:underline;
+}
+.msg_cs {
+    position: relative;
+    clear: both;
+    padding: 12px 55px 0px 20px;
+    text-align: left;
+    *zoom: 1;
+    overflow: hidden;
+}
+.msg_cs .msgtitle {
+    color: #888787;
+    line-height: 20px;
+    word-break: break-all;
+}
+.msg_cs .msg, .msg_cs .answer {
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    word-break: break-all;
+    padding: 7px;
+    min-height: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    position: relative;
+    border: 1px #dadada solid;
+    text-align: left;
+    color: #333333;
+    background-color: #f2fcff;
+    float: left;
+}
+.msg_cs .msg {
+    background-color: #e5f4fb;
+    border-color: #c1e0ef;
+}
+.msg_cs .msg .before, .msg_cs .answer .before {
+    left: -10px;
+    position: absolute;
+    top: 8px;
+    width: 13px;
+    height: 13px;
+    background: url('../images/friend/dir_msg.png') no-repeat;
+}
+.msg_cus {
+    position: relative;
+    clear: both;
+    padding: 12px 20px 0px 55px;
+    text-align: right;
+    *zoom: 1;
+    overflow: hidden;
+}
+.msg_cus .msgtitle {
+    clear: both;
+    color: #888787;
+    line-height: 20px;
+    word-break: break-all;
+}
+.msg_cus .msg {
+    border-radius: 5px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+    word-break: break-all;
+    padding: 7px;
+    min-height: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    position: relative;
+    border: 1px #dadada solid;
+    text-align: left;
+    color: #333333;
+    background-color: #ffffff;
+    float: right;
+}
+.msg_cus .msg {
+    border: 1px #dedede solid;
+    background-color: #fbfbfb;
+}
+.msg_cus .msg .after {
+    right: -13px;
+    position: absolute;
+    top: 8px;
+    width: 13px;
+    height: 13px;
+    background: url('../images/friend/dir_msg_right.png') no-repeat;
+}
+#userOptiv {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+.border1Content{
+	border-top:0px;
+	height:100%;
+	overflow:auto;
+	*overflow:visible;
+	_overflow:auto;
+	background-color:#fff;
+	*zoom:1;
+}
+
+#ksEditPanel {
+    padding:5px 0px 10px 0px;
+    height: 35px;
+    width: 100%;
+    border-top: 1px #e6e6e6 solid;
+}
+#sendMsgDiv {
+    width: 100%;
+}
+.ksEditInstance_border {
+    margin: 4px 5px 0px 3px;
+}
+#ksEditInstance {
+    width: 100%;
+    max-width: 100%;
+    height: 66px;
+    max-height: 66px;
+    outline: none;
+    overflow: auto;
+    margin: 0px;
+    padding:0px 10px;
+}
+#ksEditInstance {
+    height: 61px;
+    max-height: 61px;
+}
+#ksAdDiv{
+	height:30px;
+	margin-right:70px;
+	border:1px #D5D5D5 solid;
+	background-color:#faf9f9;
+	overflow:hidden;
+	padding: 0px 30px 0px 10px;
+}
+#ksAdDiv {
+    border-color: #FFF;
+    background-color: #FFF;
+    margin-right: 87px;
+    margin-left: 1px;
+}
+
+#ksAdDiv .ad{
+	width:100%;
+	line-height:30px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	color:#616060;
+	text-decoration:underline;
+}
+#ksDirSendBtnAea {
+    /*background: url('../images/send_btn.png') -0px -0px no-repeat;*/
+    color: #FFF;
+    background-color: #7E8DEF;
+    text-align: center;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    height: 26px;
+    width: 81px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    line-height: 26px;
+    *width: 71px;
+    overflow-x: visible;
+    position: absolute;
+    white-space: nowrap;
+    right: 0px;
+    bottom: 0px;
+    border: 0px;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#ksDirSendBtnAea:hover{
+    opacity:0.8;
+}
+.cl_right .cl_right_right{
+    float:left;
+    /*width:40%;*/
+    border-top:1px solid #eee;
+    border-right:1px solid #eee;
+    border-bottom:1px solid #eee;
+ }
+.cl_right .cl_right_right .mess_right_top{
+    height:44px;
+    position:relative;
+    border-bottom:1px solid #eee;
+}
+.cl_right .cl_right_right .mess_right_top .a1{
+    position:absolute;
+   top:15px;
+   left:15px;
+}
+.cl_right .cl_right_right .mess_right_top .a2{
+    position:absolute;
+   top:15px;
+   left:80px;
+}
+.cl_right .cl_right_right .mess_right_top .a3{
+    position:absolute;
+   top:15px;
+   left:140px;
+}
+.cl_right .cl_right_right .div-desc{
+    padding:0px 10px;
+}
+.cl_right .cl_right_right .div-desc-1{
+   margin-bottom:20px;
+}
+.cl_right .cl_right_right .div-desc h5{
+   color:#666;
+   font-weight:bold;
+}
+.cl_right .cl_right_right .div-desc-2{
+    position:relative;
+}
+.cl_right .cl_right_right .div-desc a{
+   color:#FFF;
+   font-size:12px;
+   cursor:pointer;
+   padding:2px 5px;
+   background-color:#1296DB;
+   border:1px solid #1084C2;
+   position:absolute;
+   top:-5px;
+}
+.cl_right .cl_right_right .div-desc a.a1 {
+     left:100px;
+}
+.cl_right .cl_right_right .div-desc a.a2 {
+     left:150px;
+}
+.k_s_ol_pngFix_b{
+    width: 32px; height: 24px; float: left;padding-right:10px; background: rgba(0, 0, 0, 0) url('../images/friend/chess_5.png')  no-repeat;
+}
+.k_s_ol_pngFix_b:hover{
+    background: rgba(0, 0, 0, 0) url('../images/friend/chess_4.png')  no-repeat;
+}
+.k_s_ol_pngFix_y{
+    width: 32px; height: 24px; float: left; background: rgba(0, 0, 0, 0) url('../images/friend/chess_7.png') no-repeat;
+}
+.k_s_ol_pngFix_y:hover{
+    background: rgba(0, 0, 0, 0) url('../images/friend/chess_6.png')  no-repeat;
+}
+/***************************响应式***********************/
+@media (min-width: 767px) {
+    .sidebar_left,.sidebar_right{
+        padding:0px;
+    }
+}
+@media (max-width: 767px) {
+  .menubar .M_box {
+    display:none;
+    top: 23px;
+    background: #5162AA;
+    height: 320px;
+    border-top: 1px solid #7481BB;
+}
+  .menubar .menuLeft .menu{
+      display:block;
+      font-size:16px;
+      padding: 10px 0px;
+  }
+   .menubar .menuLeft .menu:hover{
+     background:#4350A4;
+  }
+  .menubar .menuRight {
+    top: 240px;
+    }
+  .menubar .menuRight .menu_1{
+      display:block;
+    padding-right:0px;
+     padding: 5px 0px;
+      font-size:16px;
+}
+  .menubar .menuRight .menu_1:hover{
+     background:#4350A4;
+   }
+  .menubar .menuRight .menu_2,.menubar .menuRight .menu_3,.menubar .menuRight .menu_4,.menubar .menuRight .menu_5{
+      margin-right:20px;
+      margin-top:10px;
+  }
+   .navbar-toggle-zdy{
+      position:relative;
+      top:10px;
+      left:20px;
+      display:block;
+      width:32px;
+      height:25px;
+      cursor:pointer;
+  }
+  .navbar-toggle-zdy .icon-bar-zdy{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-top:5px;
+    border-radius: 1px;
+    background-color: #E3E5F0;
+
+  }
+  .sidebar_left .sidebar_box{
+      height:auto;
+      margin-bottom:15px;
+  }
+ .content_box .list .item{
+     margin-bottom:15px;
+ }
+ .content_box .img_2{
+      margin-bottom:15px;
+ }
+ .login_bg .login_box{
+    padding-right:15px;
+}
+ .login_bg .login_con{
+     margin-top:30px;
+ }
+ .video_player{
+     height:auto;
+ }
+ .video_con .title{
+     margin-top:20px;
+ }
+.chess_B .divbox {
+    margin-top:15px;
+}
+.chess_B .divbox .item img {
+    width: 80px;
+    height: 80px;
+}
+.chess_B .divbox .item .p-name {
+    font-size: 14px;
+}
+.chess_B .divbox .item .p-name {
+    font-size: 14px;
+}
+.chess_B .divbox .item .p-desc {
+    font-size: 12px;
+    padding-top: 10px;
+}
+.chess_B .divbox .item .p-desc span{
+    width: 65%;
+}
+.chess_B .wqList li a{
+    width:60px;
+    height:60px;
+    /*background-size:80% 80%;*/
+}
+.chess_B .divbox .item4 .btnDuiju{
+    width:180px;
+    background-size:100% 100%;
+}
+.chess_B .divbox .item4 .btnDuiju:hover{
+    width:180px;
+    background-size:100% 100%;
+}
+.chess_B .divbox .item4 .btnDuiju:active{
+    width:180px;
+    background-size:100% 100%;
+}
+.chess_B .divbox .itemblock .btn{
+    background-size:90%;
+}
+.chess_B .divbox .item6 .item{
+    font-size:14px;
+}
+.chess_B .divbox .item6 .content .liaotian .neirong input{
+    width:45%;
+}
+.chess_B .divbox .item5 ul li{
+    font-size:12px;
+}
+.chess_B .divbox .item6 .content .tablelist td .btnHaoyou{
+    width:30px;
+    background-size:100% 100%;
+}
+.chess_B .divbox .item6 .content .tablelist td .btnHaoyou:hover{
+    width:30px;
+    background-size:100% 100%;
+}
+.chess_B .divbox .item6 .content .tablelist td .btnHaoyou:active{
+    width:30px;
+    background-size:100% 100%;
+}
+.white_content{
+    top:15%;
+    left:0%;
+    width:100%;
+}
+.white_content .conbox .form-control {
+    width: 100%;
+    margin: 5px 5px;
+    display: block;
+}
+}
